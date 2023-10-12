@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Boxes</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            width: 110px;
+            height: 110px;
+            position: relative;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            position: absolute; 
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 1px;;
+        }
+
+        .box.A {
+            top: 30px; 
+            left: 30px;
+        }
+
+        .box.B {
+            top:0;
+            left:0;
+        }
+
+        .box.C {
+            top: 0;
+            right: 0;
+        }
+
+        .box.D {
+            bottom: 0;
+            left: 0;
+        }
+
+        .box.E {
+            bottom: 0;
+            right: 0;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+        <div class="box D">D</div>
+        <div class="box E">E</div>
+    </div>
+</body>
+</html>
